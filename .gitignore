@@ -1,2 +1,2 @@
 # ignore python cache binaries
-*__pycache__/*
+__pycache__/
