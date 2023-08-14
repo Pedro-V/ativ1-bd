@@ -1,9 +1,11 @@
-from django.urls import path
+from django.urls import path, re_path
 from rest_framework.urlpatterns import format_suffix_patterns
 from user_app import views
 
 urlpatterns = [
-    path('users/', views.UsuarioList.as_view()),
+    # either the empty path or users
+    path('', views.UsuarioList.as_view()),
+    path('users/', views.UsuarioList.as_view()), 
     path('users/<int:pk>/', views.UsuarioDetail.as_view()),
 ]
 
