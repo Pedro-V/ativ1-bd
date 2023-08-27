@@ -4,7 +4,7 @@ from user_app import views
 
 urlpatterns = [
     path('', views.UsuarioList.as_view()),
-    path('<int:pk>/', views.UsuarioDetail.as_view()),
+    path('<string:pk>/', views.UsuarioDetail.as_view()),
 ]
 
 # permite tratamento apropriado de diferentes formatos

@@ -26,8 +26,13 @@ SECRET_KEY = "django-insecure-kqyobrphk(6f6rd8unuxw7!)dloz6errjzj0p&-&^c08oeu#n6
 DEBUG = True
 
 ALLOWED_HOSTS = [
+<<<<<<< HEAD
     'users.us-east-1.elasticbeanstalk.com',
     '127.0.0.1',
+=======
+    'user-api.us-east-1.elasticbeanstalk.com',
+    '127.0.0.1'
+>>>>>>> 4513587 (updates para aws)
 ]
 
 # Application definition
@@ -120,7 +125,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "/static/"
+STATIC_URL = "static/"
 STATIC_ROOT = 'static'
 
 # Default primary key field type
